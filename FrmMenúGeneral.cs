@@ -54,5 +54,10 @@ namespace Préstamos {
       FrmAltaPréstamos fap = new FrmAltaPréstamos(GestorBD);
       fap.ShowDialog();
     }
-  }
+
+    private void btnConPrestam_Click(object sender, EventArgs e) {
+            FrmConsultaPréstamos fcp = new FrmConsultaPréstamos(GestorBD);
+            fcp.ShowDialog(); 
+    }
+    }
 }
