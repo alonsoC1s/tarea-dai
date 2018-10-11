@@ -24,6 +24,8 @@
         /// </summary>
         private void InitializeComponent() {
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGVDatos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -36,14 +38,24 @@
             this.label1.Text = "CONSULTA PRESTAMOS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // dataGVDatos
+            // 
+            this.dataGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGVDatos.Location = new System.Drawing.Point(62, 98);
+            this.dataGVDatos.Name = "dataGVDatos";
+            this.dataGVDatos.Size = new System.Drawing.Size(399, 241);
+            this.dataGVDatos.TabIndex = 1;
+            // 
             // FrmConsultaPréstamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 387);
+            this.Controls.Add(this.dataGVDatos);
             this.Controls.Add(this.label1);
             this.Name = "FrmConsultaPréstamos";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -52,5 +64,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGVDatos;
     }
 }

@@ -56,7 +56,7 @@ namespace Préstamos {
     }
 
     private void btnConPrestam_Click(object sender, EventArgs e) {
-            FrmConsultaPréstamos fcp = new FrmConsultaPréstamos(GestorBD);
+            FrmConsultaPréstamos fcp = new FrmConsultaPréstamos(GestorBD, rfc);
             fcp.ShowDialog(); 
     }
     }
