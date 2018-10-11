@@ -1,0 +1,16 @@
+C:\DAI\Programas\Préstamos\bin\Debug\Préstamos.exe.config
+C:\DAI\Programas\Préstamos\bin\Debug\Préstamos.exe
+C:\DAI\Programas\Préstamos\bin\Debug\Préstamos.pdb
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.csprojResolveAssemblyReference.cache
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmCalculaPagos.resources
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.Properties.Resources.resources
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.csproj.GenerateResource.Cache
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.exe
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.pdb
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmIngreso.resources
+C:\DAI\Programas\Préstamos\bin\Debug\GestorBD.dll
+C:\DAI\Programas\Préstamos\bin\Debug\GestorBD.pdb
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmMenúGeneral.resources
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmAltaClientes.resources
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmConsClientes.resources
+C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmAltaPréstamos.resources
