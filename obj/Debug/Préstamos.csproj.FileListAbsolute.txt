@@ -14,3 +14,6 @@ C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmMenúGeneral.resources
 C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmAltaClientes.resources
 C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmConsClientes.resources
 C:\DAI\Programas\Préstamos\obj\Debug\Préstamos.FrmAltaPréstamos.resources
+C:\Users\dai\Desktop\Préstamos\bin\Debug\Préstamos.exe.config
+C:\Users\dai\Desktop\Préstamos\obj\Debug\Préstamos.exe
+C:\Users\dai\Desktop\Préstamos\obj\Debug\Préstamos.pdb

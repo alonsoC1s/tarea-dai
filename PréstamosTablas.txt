@@ -1,0 +1,61 @@
+-- Base de datos: Préstamos
+
+-- Creación de tablas.
+
+-- Tabla: Clientes.
+create table Clientes
+(Rfc		char(13)  primary key,
+Contraseña	char(12),
+Nombre		char(50),
+Domicilio	char(50),
+Teléfono	char(13));
+
+-- Tabla: Préstamos.
+create table Préstamos
+(Folio		int	primary key,
+Fecha		date,
+Monto		money,
+Tasa		real,
+Plazo		int,
+Mensualidad	money,
+PagoTotal	money,
+Saldo		money,
+RFC		char(13) references Clientes not null);  -- Clave del cliente dueño del préstamo.
+
+-- Tabla: Pagos (es entidad débil con respecto a Préstamos).
+create table Pagos
+(Folio		int	references Préstamos,	-- Se indica a qué préstamo corresponde el pago.
+IdP		int,	    -- La clave de cada pago inicia en 1 para cada préstamo.
+		primary key (Folio,IdP),
+Fecha		date,
+MontoPago	money);
+
+--- Tabla de Empresas.
+create table Empresas
+(IdEmp		int	primary key,
+Nombre		char(50),
+Domicilio	char(50),
+Teléfono	char(13));
+
+--- Tabla: Trabajan (representa un vínculo M-N entre Clientes y Empresas).
+create table Trabajan
+(Rfc		char(13),
+IdEmp		int,
+		primary key (Rfc, IdEmp),
+FechaIni	date);		-- Fecha de inicio de trabajo en la empresa.
+
+--- Tabla: Avales.
+create table Avales
+(IdAval		int	primary key,
+Nombre		char(50),
+Domicilio	char(50),
+Teléfono	char(13),
+NoEscritura	char(20));	-- No. de escritura de un bien raíz.
+
+--- Tabla: Avalan (representa un vínculo M-N entre Préstamos y Avales).
+create table Avalan
+(Folio		int,
+IdAval		int,
+		primary key (Folio, IdAval),
+MontoAvalado	money);
+
