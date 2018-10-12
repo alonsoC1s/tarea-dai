@@ -51,6 +51,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comunes.cs" />
+    <Compile Include="FrmConsultaPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>FrmConsultaPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAltaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAltaPago.Designer.cs">
+      <DependentUpon>FrmAltaPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultaPréstamos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
     <Compile Include="Fórmulas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>FrmConsultaPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAltaPago.resx">
+      <DependentUpon>FrmAltaPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAltaClientes.resx">
       <DependentUpon>FrmAltaClientes.cs</DependentUpon>
     </EmbeddedResource>

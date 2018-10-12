@@ -34,7 +34,7 @@
             this.MnuAltaPréstamos = new System.Windows.Forms.ToolStripMenuItem();
             this.btnConPrestam = new System.Windows.Forms.ToolStripMenuItem();
             this.pagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolstripAltaPag = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +65,7 @@
             // MnuCerrar
             // 
             this.MnuCerrar.Name = "MnuCerrar";
-            this.MnuCerrar.Size = new System.Drawing.Size(106, 22);
+            this.MnuCerrar.Size = new System.Drawing.Size(152, 22);
             this.MnuCerrar.Text = "Cerrar";
             this.MnuCerrar.Click += new System.EventHandler(this.MnuCerrar_Click);
             // 
@@ -82,14 +82,14 @@
             // 
             this.MnuAltaClientes.Enabled = false;
             this.MnuAltaClientes.Name = "MnuAltaClientes";
-            this.MnuAltaClientes.Size = new System.Drawing.Size(121, 22);
+            this.MnuAltaClientes.Size = new System.Drawing.Size(152, 22);
             this.MnuAltaClientes.Text = "Alta";
             this.MnuAltaClientes.Click += new System.EventHandler(this.MnuAltaClientes_Click);
             // 
             // MnuConsultaClientes
             // 
             this.MnuConsultaClientes.Name = "MnuConsultaClientes";
-            this.MnuConsultaClientes.Size = new System.Drawing.Size(121, 22);
+            this.MnuConsultaClientes.Size = new System.Drawing.Size(152, 22);
             this.MnuConsultaClientes.Text = "Consulta";
             this.MnuConsultaClientes.Click += new System.EventHandler(this.MnuConsultaClientes_Click);
             // 
@@ -120,24 +120,26 @@
             // pagosToolStripMenuItem
             // 
             this.pagosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.altaToolStripMenuItem2,
+            this.toolstripAltaPag,
             this.consultaToolStripMenuItem2});
             this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
             this.pagosToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.pagosToolStripMenuItem.Text = "Pagos";
             // 
-            // altaToolStripMenuItem2
+            // toolstripAltaPag
             // 
-            this.altaToolStripMenuItem2.Enabled = false;
-            this.altaToolStripMenuItem2.Name = "altaToolStripMenuItem2";
-            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
-            this.altaToolStripMenuItem2.Text = "Alta";
+            this.toolstripAltaPag.Enabled = false;
+            this.toolstripAltaPag.Name = "toolstripAltaPag";
+            this.toolstripAltaPag.Size = new System.Drawing.Size(152, 22);
+            this.toolstripAltaPag.Text = "Alta";
+            this.toolstripAltaPag.Click += new System.EventHandler(this.altaToolStripMenuItem2_Click);
             // 
             // consultaToolStripMenuItem2
             // 
             this.consultaToolStripMenuItem2.Name = "consultaToolStripMenuItem2";
-            this.consultaToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
+            this.consultaToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.consultaToolStripMenuItem2.Text = "Consulta";
+            this.consultaToolStripMenuItem2.Click += new System.EventHandler(this.consultaToolStripMenuItem2_Click);
             // 
             // FrmMenúGeneral
             // 
@@ -148,7 +150,7 @@
             this.ClientSize = new System.Drawing.Size(568, 381);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMenúGeneral";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú general";
@@ -171,7 +173,7 @@
     private System.Windows.Forms.ToolStripMenuItem MnuAltaPréstamos;
     private System.Windows.Forms.ToolStripMenuItem btnConPrestam;
     private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem;
-    private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem2;
+    private System.Windows.Forms.ToolStripMenuItem toolstripAltaPag;
     private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem2;
   }
 }

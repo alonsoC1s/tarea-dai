@@ -23,10 +23,12 @@ namespace Préstamos {
       if (rfc == "ger") {
         MnuAltaClientes.Enabled = true;
         MnuAltaPréstamos.Enabled = true;
+        toolstripAltaPag.Enabled = true; 
       }
       else {
         MnuAltaClientes.Enabled = false;
         MnuAltaPréstamos.Enabled = false;
+        toolstripAltaPag.Enabled = false; 
       }
     }
 
@@ -59,5 +61,19 @@ namespace Préstamos {
             FrmConsultaPréstamos fcp = new FrmConsultaPréstamos(GestorBD, rfc);
             fcp.ShowDialog(); 
     }
+
+   //Alta de Pago 
+   private void altaToolStripMenuItem2_Click(object sender, EventArgs e){
+            FrmAltaPago ffp = new FrmAltaPago(GestorBD, rfc);
+            ffp.ShowDialog(); 
+
+   }
+
+   // Consulta de pagos 
+   private void consultaToolStripMenuItem2_Click(object sender, EventArgs e){
+            FrmConsultaPagos fcpp = new FrmConsultaPagos(GestorBD, rfc);
+
+            fcpp.ShowDialog();
+   }
     }
 }

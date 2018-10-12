@@ -29,10 +29,12 @@ namespace Préstamos {
             //Si no es ger, solo puede ver sus propios prestamos 
             if (rfc == "ger") {
                 this.cadSql = "select * from Préstamos" ;
+                Console.WriteLine(this.cadSql);
                 gestorLocal.consBD(this.cadSql, DsGeneral, "Préstamos"); 
             }else {
-                this.cadSql = "select * from Préstamos where rfc = ' " + this.rfc + " ' ";
+                this.cadSql = "select * from Préstamos where rfc = '" + this.rfc + "' ";
                 gestorLocal.consBD(this.cadSql, DsGeneral, "Préstamos");
+                Console.WriteLine(this.cadSql);
 
             }
 
